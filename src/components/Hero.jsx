@@ -5,7 +5,8 @@ function Hero() {
     return (
         <section>
             <div className="heroImage">
-                <img src={AshFlash}/>
+                <img src={AshFlash} 
+                style={{height: "300px", }}/>
             </div>
             <div className="nameLocation">
                 <h1>Ash Robinson</h1>
@@ -18,7 +19,11 @@ function Hero() {
                     Bold American Traditional. My passion for tattooing is what 
                     drives me to ensure that my work is always excellent. </h3>
             </div>
-            <div className="bookingBtn"></div>
+            <div className="bookingBtn">
+                <a href="https://www.instagram.com/robinson.tattoo/" target="_blank">
+                <button>Book Now</button></a>
+                <p>(DM on IG to book)</p>
+            </div>
         </section>
     );
 }

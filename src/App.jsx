@@ -3,7 +3,7 @@ import './App.css'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Carousel from './components/Carousel'
-import Aftercare from './components/Aftercare'
+import Specialties from './components/Specialties'
 import Footer from './components/Footer'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Navigation />
     <Hero />
     <Carousel />
-    <Aftercare />
+    <Specialties />
     <Footer />
     </>
   )

@@ -5,7 +5,17 @@ import placeHolder from "../assets/placeholder9-16.jpg";
 function Carousel() {
 
     //array of images 
-    let carouselImages = [{placeHolder}, {placeHolder}, {placeHolder}];
+    let carouselImages = [
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+        placeHolder,
+    ];
     //image index state
     const [currentIndex, setCurrentIndex] = useState(0)
     // images displayed at one time, 2 rows 3 columns
