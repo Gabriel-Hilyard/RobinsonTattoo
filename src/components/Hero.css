@@ -1,0 +1,55 @@
+section {
+    background-color: #5B2121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 35vh;
+}
+
+.nameLocation {
+    text-align: center;
+    flex-direction: column;
+    width: 25%;
+    overflow: hidden;
+}
+
+.nameLocation h3 {
+    margin: 1rem;
+}
+
+.heroImage img{
+    border-radius: 10px;
+}
+
+button {
+   
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #242323;
+    color: #5B2121;
+    font-weight: bold;
+    
+}
+
+.bookingBtn p {
+    margin-top: 1.5rem;
+}
+
+.nameLocation, .heroTitle {
+    animation-duration: 3s;
+    animation-name: slide-left;
+}
+
+@keyframes slide-left {
+    from {
+        translate:  150vw 0;
+        scale: 100% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}

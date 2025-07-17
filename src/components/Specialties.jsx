@@ -1,6 +1,6 @@
 import React from "react";
 import ashPortrait from "../assets/AshPortrait.png";
-
+import "./Specialties.css";
 
 function Specialties() {
     return (

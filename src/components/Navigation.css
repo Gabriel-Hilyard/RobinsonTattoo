@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pageTitle {
+    background-color: #5B2121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 3rem;
+    border-radius: 10px;
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 0 -150vw;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}

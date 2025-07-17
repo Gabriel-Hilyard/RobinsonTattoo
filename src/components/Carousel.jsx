@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
 import placeHolder from "../assets/placeholder9-16.jpg";
+import "./Carousel.css";
 
 function Carousel() {
 
