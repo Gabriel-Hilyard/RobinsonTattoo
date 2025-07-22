@@ -23,7 +23,7 @@ function Hero() {
 
                 <div className="bookingBtn">
                 <a href="https://www.instagram.com/robinson.tattoo/" target="_blank">
-                <button className="">Book Now</button></a>
+                <button className="btnAnimate">Book Now</button></a>
                 <p>(DM on IG to book)</p>
             </div>
             </div>
