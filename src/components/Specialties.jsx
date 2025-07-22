@@ -8,12 +8,12 @@ function Specialties() {
         <div className="specialtyCard">
             <div className="imgContainer">
              <img src={ashPortrait} 
-             style={{height: "300px", }}/>
+             style={{height: "300px" }}/>
             </div>
             <div className="titleDescription">
                 <h1>Specialties</h1>
                 
-            </div>
+            
             
             <div className="specialtyList">
                 <ul>
@@ -24,6 +24,7 @@ function Specialties() {
                     <li><a href="https://www.instagram.com/robinson.tattoo/" target="_blank">@robinson.tattoo</a></li>
                 </ul>
             </div>
+          </div>
         </div>
         </>
     );
