@@ -1,0 +1,16 @@
+.carouselContainer {
+    display: flex;
+    background-color: #5B2121;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.carouselContainer img {
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.carouselRow {
+    
+}
