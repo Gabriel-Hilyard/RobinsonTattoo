@@ -11,6 +11,11 @@
     border-radius: 10px;
     margin: 1rem;
 }
-.carouselRow {
-    
+.carouselBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: #242323;
+    color: #5B2121;
+    font-weight: bold;
 }

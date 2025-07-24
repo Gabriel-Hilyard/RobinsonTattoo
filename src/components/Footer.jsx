@@ -5,9 +5,10 @@ import "./Footer.css";
 function Footer() {
     return (
         <footer>
+        <div className="footerStyling">
             <div className="bookingBtn">
          <a href="https://www.instagram.com/robinson.tattoo/" target="_blank">
-            <button>Book Now</button></a>
+            <button className="footerBtn">Book Now</button></a>
             <p>(DM to book)</p>
             </div>
             <div className="location">
@@ -22,6 +23,7 @@ function Footer() {
             referrerPolicy="no-referrer-when-downgrade"/>
              </div>
               <h3>1243 W Ave I, Lancaster, CA 93534</h3>
+        </div>
             </div>
               <a href='https://www.linkedin.com/in/gabriel-hilyard-87a583173'>Created by Gabriel Hilyard</a>
               &copy; {new Date().getFullYear()} Robinson Tattoo all rights reserved.

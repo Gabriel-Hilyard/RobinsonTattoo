@@ -60,7 +60,11 @@ function Carousel() {
 
     return (
     <div className="carouselContainer">
-        <button onClick={handlePrev}>&lt;</button>
+
+        <div>
+            <h1></h1>
+        </div>
+        <button className="carouselBtn" onClick={handlePrev}>&lt;</button>
 
         <div className="carouselRows">
             <div className="carouselRow">
@@ -74,7 +78,7 @@ function Carousel() {
                 ))}
             </div>
         </div>
-        <button onClick={handleNext}>&gt;</button>
+        <button className="carouselBtn" onClick={handleNext}>&gt;</button>
     </div>
     );
 }

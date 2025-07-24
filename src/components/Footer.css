@@ -1,0 +1,22 @@
+footer {
+    background-color: #5B2121;
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.footerStyling {
+    display:flex;
+    justify-content: center;
+    gap: 15rem;
+    align-items: center;
+}
+
+.footerBtn {
+    width: 175px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #242323;
+    color: #5B2121;
+    font-weight: bold;
+    font-size: large;
+}
