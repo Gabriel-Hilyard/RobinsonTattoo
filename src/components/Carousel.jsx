@@ -1,5 +1,4 @@
-import React from "react";
-import {useState} from "react";
+import  { useState, useEffect } from "react";
 import eagle from "../assets/eagleTattoo.jpg"
 import snake from "../assets/snakeTattoo.jpg"
 import rose from "../assets/roseTattoo.jpg"
@@ -14,72 +13,84 @@ import japanese from "../assets/japaneseTattoo.jpg"
 import alligator from "../assets/alligatorTattoo.jpg"
 import "./Carousel.css";
 
+
+
 function Carousel() {
+  const carouselImages = [
+    eagle, snake, rose, cerberus, executioner, angel,
+    fireSnake, barbedwire, thorn, backpiece, japanese, alligator
+  ];
 
-    //array of images 
-    let carouselImages = [
-        eagle,
-        snake,
-        rose,
-        cerberus,
-        executioner,
-        angel,
-        fireSnake,
-        barbedwire,
-        thorn,
-        backpiece,
-        japanese,
-        alligator,
-    ];
-    //image index state
-    const [currentIndex, setCurrentIndex] = useState(0)
-    // images displayed at one time, 2 rows 3 columns
-    const imagesPerPage = 6;
-    //Slicing array 
-    const visibleImages = carouselImages.slice(currentIndex, currentIndex + imagesPerPage)
+  // Track screen width to adjust images per page
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [imagesPerPage, setImagesPerPage] = useState(getImagesPerPage(window.innerWidth));
+  const [currentPage, setCurrentPage] = useState(0);
 
+  function getImagesPerPage(width) {
+    if (width <= 480) return 3;      // Mobile (e.g., 1 row of 3)
+    if (width <= 768) return 4;      // Small tablets
+    return 6;                        // Desktop (2 rows x 3 cols)
+  }
 
-    const handleNext = ( ) => {
-        const nextIndex = currentIndex + imagesPerPage;
-        if (nextIndex < carouselImages.length) {
-            setCurrentIndex(nextIndex);
-        } else {
-            setCurrentIndex(0); //looping to start
-        }
+  useEffect(() => {
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      setWindowWidth(newWidth);
+      setImagesPerPage(getImagesPerPage(newWidth));
+      setCurrentPage(0); // Reset to first page on layout change
     };
 
-    const handlePrev = () => {
-        const prevIndex = currentIndex - imagesPerPage;
-        if (prevIndex >= 0) {
-            setCurrentIndex(prevIndex);
-        } else {
-            setCurrentIndex(images.length - imagesPerPage);
-        }
-    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const totalPages = Math.ceil(carouselImages.length / imagesPerPage);
+
+  const handleNext = () => {
+    setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
+  };
+
+  const handlePrev = () => {
+    setCurrentPage((prevPage) => (prevPage - 1 + totalPages) % totalPages);
+  };
+
 
 
     return (
-    <div className="carouselContainer">
+<div className="carouselContainer">
+  <button className="carouselBtn prev" onClick={handlePrev}>&lt;</button>
 
-        <div>
-            <h1></h1>
-        </div>
-        <button className="carouselBtn" onClick={handlePrev}>&lt;</button>
-
-        <div className="carouselRows">
+  <div className="carouselViewport">
+    <div
+      className="carouselSlider"
+      style={{
+        transform: `translateX(-${currentPage * 100}%)`,
+      }}
+    >
+      {Array.from({ length: totalPages }).map((_, pageIndex) => {
+        const start = pageIndex * imagesPerPage;
+        const pageImages = carouselImages.slice(start, start + imagesPerPage);
+        const half = Math.ceil(pageImages.length / 2);
+        return (
+          <div className="carouselPage" key={pageIndex}>
             <div className="carouselRow">
-                {visibleImages.slice(0,3).map((src, i) => (
-                    <img key={i} src={src} alt={`tattoo ${i}`} border="solid 1px black" width="300" />
-                ))}
+              {pageImages.slice(0, half).map((src, i) => (
+                <img key={`top-${i}`} src={src} alt={`tattoo ${i}`} />
+              ))}
             </div>
             <div className="carouselRow">
-                {visibleImages.slice(3, 6).map((src, i) => (
-                    <img key={i + 3} src={src} alt={`tattoo ${i}`} width="300"/>
-                ))}
+              {pageImages.slice(half).map((src, i) => (
+                <img key={`bottom-${i}`} src={src} alt={`tattoo ${i + half}`} />
+              ))}
             </div>
-        </div>
-        <button className="carouselBtn" onClick={handleNext}>&gt;</button>
+          </div>
+        );
+      })}
     </div>
+  </div>
+
+  <button className="carouselBtn next" onClick={handleNext}>&gt;</button>
+</div>
     );
 }
 
