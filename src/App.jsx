@@ -11,6 +11,16 @@ function App() {
 
   return (
     <>
+     <video
+     autoPlay
+     loop
+     muted
+     playsInline
+     className="backgroundVideoGlobal"
+       >
+     <source src="/video/ashDragonv2.mp4" type="video/mp4"/>
+     Your browser does not support the video tag.
+     </video>
     <Navigation />
     <Hero />
     <Carousel />
