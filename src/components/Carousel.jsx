@@ -57,10 +57,17 @@ function Carousel() {
 
 
     return (
-<div className="carouselContainer">
-  <button className="carouselBtn prev" onClick={handlePrev}>&lt;</button>
 
-  <div className="carouselViewport">
+
+    <div className="carouselWrapper">
+
+      <h1>My Portfolio</h1>
+  <div className="carouselContainer">
+
+
+    <button className="carouselBtn prev" onClick={handlePrev}>&lt;</button>
+
+    <div className="carouselViewport">
     <div
       className="carouselSlider"
       style={{
@@ -90,6 +97,8 @@ function Carousel() {
   </div>
 
   <button className="carouselBtn next" onClick={handleNext}>&gt;</button>
+</div>
+
 </div>
     );
 }

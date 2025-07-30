@@ -1,5 +1,23 @@
+.carouselWrapper {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  align-items: center;    /* center horizontally */
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #5B2121;
+  box-shadow: 1px 1px 13px 22px #5B2121;
+  margin-top: 45vh;
+}
+
+.carouselTitle {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .carouselContainer {
-  margin-top: 25vh;
+  
   position: relative;
   width: 100%;
   display: flex;
@@ -7,6 +25,11 @@
   align-items: center;
   padding: 2rem 0;
   background-color: #5B2121;
+  box-shadow: 10px 0px 35px #5B2121;
+  
+  padding: 1rem;
+  color: #f0e9e9;
+  text-align: center;
 }
 
 .carouselViewport {

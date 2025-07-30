@@ -5,6 +5,7 @@ import "./Hero.css";
 function Hero() {
     return (
         <section>
+            
             <div className="heroImage">
                 <img src={AshFlash} 
                 style={{height: "350px", }}/>
