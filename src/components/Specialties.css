@@ -36,10 +36,13 @@
 
 .instagramHandle {
     color: black;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
-
+    .imgContainer img {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {

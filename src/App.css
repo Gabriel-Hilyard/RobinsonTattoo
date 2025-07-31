@@ -1,11 +1,9 @@
 .backgroundVideoGlobal {
   position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: center;
-  z-index: -10; /* Way behind everything */
-  pointer-events: none;
+
+  width: 100vw;
+  height: 100dvh;
+  object-fit: cover;
+  z-index: -1; /* Way behind everything */
   filter: brightness(50%);
 }
