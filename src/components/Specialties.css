@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     gap: 7rem;
-    margin-top: 25vh;
+    margin-top: 35vh;
     height: 25rem;
-    box-shadow: 1px 24px 13px 22px #5B2121;
+    box-shadow: 1px 1px 13px 22px #5B2121;
 }
 
 .specialtyList li{
@@ -17,4 +17,22 @@
 
 .imgContainer img {
     border-radius: 10px;
+}
+
+.specialtyList li {
+    list-style: none;
+    margin: 1em 0;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.specialtyList .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.instagramHandle {
+    color: black;
 }
