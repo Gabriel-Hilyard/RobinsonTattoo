@@ -8,7 +8,8 @@ function Hero() {
             
             <div className="heroImage">
                 <img src={AshFlash} 
-                style={{height: "350px", }}/>
+                className="ashFlashImage"
+                />
             </div>
             <div className="nameLocation">
                 <h1 className="heroTitle">Ash Robinson</h1>

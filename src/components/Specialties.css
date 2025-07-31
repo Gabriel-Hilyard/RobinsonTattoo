@@ -5,7 +5,7 @@
     align-items: center;
     gap: 7rem;
     margin-top: 35vh;
-    height: 25rem;
+    height: 30rem;
     box-shadow: 1px 1px 13px 22px #5B2121;
 }
 
@@ -17,6 +17,7 @@
 
 .imgContainer img {
     border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(20, 20, 20);
 }
 
 .specialtyList li {
@@ -35,4 +36,12 @@
 
 .instagramHandle {
     color: black;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
 }

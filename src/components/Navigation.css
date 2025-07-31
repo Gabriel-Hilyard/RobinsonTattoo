@@ -3,8 +3,8 @@ nav {
     justify-content: center;
     color: white;
     background-color: #363535;
-    opacity: .50;
-    margin-bottom: 1.25em;
+    opacity: .75;
+    margin-bottom: 1em;
 }
 
 .pageTitle {
@@ -19,6 +19,21 @@ nav {
     animation-duration: 1.5s;
     animation-name: slide-in;
 }
+
+
+@media (max-width: 768px) {
+    .pageTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+
+
+
 
 @keyframes slide-in {
     from {

@@ -7,5 +7,5 @@
   object-fit: center;
   z-index: -10; /* Way behind everything */
   pointer-events: none;
-   filter: brightness(50%);
+  filter: brightness(50%);
 }

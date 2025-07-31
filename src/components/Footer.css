@@ -10,6 +10,7 @@ footer {
     justify-content: center;
     gap: 15rem;
     align-items: center;
+    height: 25rem;
 }
 
 .footerBtn {
@@ -20,4 +21,9 @@ footer {
     color: #5B2121;
     font-weight: bold;
     font-size: large;
+}
+
+.googleMapPreview {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(20, 20, 20);
 }

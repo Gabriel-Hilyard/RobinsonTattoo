@@ -20,7 +20,8 @@ function Footer() {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"/>
+            referrerPolicy="no-referrer-when-downgrade"
+            className="googleMapPreview"/>
              </div>
               <h3>1243 W Ave I, Lancaster, CA 93534</h3>
         </div>

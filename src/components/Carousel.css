@@ -70,11 +70,13 @@
 /* Buttons on the sides */
 .carouselBtn {
     width: 50px;
-    height: 35px;
+    height: 50px;
     border-radius: 10px;
     background-color: #242323;
     color: #5B2121;
     font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(20, 20, 20);
 }
 
 .carouselBtn.prev {
@@ -85,7 +87,7 @@
   right: 10px;
 }
 
-/* ✅ Responsive tweaks for mobile */
+/*Responsive tweaks for mobile */
 @media (max-width: 768px) {
   .carouselRow img {
     width: 45%;
