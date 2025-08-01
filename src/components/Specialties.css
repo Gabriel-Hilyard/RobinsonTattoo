@@ -1,3 +1,8 @@
+.specialtyWrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .specialtyCard {
     background-color: #5B2121;
     display: flex;
@@ -7,6 +12,8 @@
     margin-top: 35vh;
     height: 30rem;
     box-shadow: 1px 1px 13px 22px #5B2121;
+    width: 85%;
+    border-radius: 10px;
 }
 
 .specialtyList li{
@@ -39,11 +46,43 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .imgContainer img {
-        display: none;
-    }
+.titleDescription {
+     text-align: center;
 }
+
+@media (max-width: 768px) {
+  .specialtyCard {
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .imgContainer img {
+    display: none;
+  }
+
+  .titleDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .specialtyList {
+    padding: 0;
+    margin: 0;
+  }
+
+  .specialtyList ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 @media (max-width: 480px) {
 

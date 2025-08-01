@@ -10,6 +10,7 @@ import "./Specialties.css";
 function Specialties() {
     return (
         <>
+      <div className="specialtyWrapper">
         <div className="specialtyCard">
             <div className="imgContainer">
              <img src={ashPortrait} 
@@ -41,6 +42,7 @@ function Specialties() {
             </div>
           </div>
         </div>
+      </div>
         </>
     );
 }

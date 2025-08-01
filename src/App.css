@@ -7,3 +7,13 @@
   z-index: -1; /* Way behind everything */
   filter: brightness(50%);
 }
+
+@media (max-width: 768px) {
+  .backgroundVideoGlobal {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+}

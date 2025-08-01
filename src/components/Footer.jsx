@@ -4,9 +4,12 @@ import "./Footer.css";
 
 function Footer() {
     return (
+
+      <div className="footerWrapper">
         <footer>
         <div className="footerStyling">
             <div className="bookingBtn">
+                <h1>Robinson Tattoo</h1>
          <a href="https://www.instagram.com/robinson.tattoo/" target="_blank">
             <button className="footerBtn">Book Now</button></a>
             <p>(DM to book)</p>
@@ -30,6 +33,7 @@ function Footer() {
               &copy; {new Date().getFullYear()} Robinson Tattoo all rights reserved.
               Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
         </footer>
+      </div>
     );
 }
 

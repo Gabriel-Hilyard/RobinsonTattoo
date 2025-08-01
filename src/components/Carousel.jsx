@@ -58,7 +58,7 @@ function Carousel() {
 
     return (
 
-
+  <div className="carouselElement">
     <div className="carouselWrapper">
 
       <h1>My Portfolio</h1>
@@ -99,6 +99,7 @@ function Carousel() {
   <button className="carouselBtn next" onClick={handleNext}>&gt;</button>
 </div>
 
+</div>
 </div>
     );
 }

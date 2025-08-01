@@ -1,12 +1,19 @@
+.carouselElement {
+  display: flex;
+  justify-content: center;
+}
+
+
 .carouselWrapper {
   display: flex;
   flex-direction: column; /* stack children vertically */
   align-items: center;    /* center horizontally */
-  width: 100%;
+  width: 85%;
   padding: 2rem 0;
   background-color: #5B2121;
   box-shadow: 1px 1px 13px 22px #5B2121;
   margin-top: 45vh;
+  border-radius: 10px;
 }
 
 .carouselTitle {
@@ -96,6 +103,10 @@
   .carouselBtn {
     font-size: 1.5rem;
     padding: 0.3rem 0.8rem;
+  }
+
+  .carouselWrapper {
+    width: 100%;
   }
 }
 

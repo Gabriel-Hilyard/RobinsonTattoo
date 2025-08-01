@@ -4,6 +4,8 @@ import "./Hero.css";
 
 function Hero() {
     return (
+
+      <div className="heroWrapper">
         <section>
             
             <div className="heroImage">
@@ -31,6 +33,7 @@ function Hero() {
             </div>
 
         </section>
+      </div>
     );
 }
 
