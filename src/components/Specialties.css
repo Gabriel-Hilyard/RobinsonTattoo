@@ -4,14 +4,14 @@
 }
 
 .specialtyCard {
-    background-color: #5B2121;
+    background-color: #FFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 7rem;
     margin-top: 35vh;
     height: 30rem;
-    box-shadow: 1px 1px 13px 22px #5B2121;
+    box-shadow: 0px 0px 20px 25px #FFFF;
     width: 85%;
     border-radius: 10px;
 }

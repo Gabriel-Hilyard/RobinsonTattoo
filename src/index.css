@@ -13,8 +13,13 @@ body {
   font-style: normal;
 }
 
-h1 {
+h1, h2, h3, li{
   font-family: "UnifrakturMaguntia", cursive;
+}
+
+button {
+  font-family: "UnifrakturMaguntia"
+
 }
 
 button:hover {
